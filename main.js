@@ -1,7 +1,17 @@
 //ARROW FUNCTIONS
 
 //CALLBACKS:
-// setTimeout( () => console.log("¡Listo!") , 3000 );
+// Un callback es una FUNCIÓN (no la llamada a la función) que se pasa a otra función como un argumento, 
+// setTimeout( () => console.log("¡Listo!") , 3000 ); // ()=> //la función que ejecuta el console.log //  console.log("¡Listo!") //llamada a la función console.log() 🥲
+//vs
+// setTimeout(console.log("¡Listo!") , 3000 ); //  console.log("¡Listo!") //llamada a la función console.log() 🥲 --> setTimeout sin callback
+
+// // ❌ Incorrecto - Ejecuta la función AL MOMENTO
+// setTimeout(
+//   function() { console.log("Listo") }(), // ojo!! los paréntesis () la ejecutan ya
+//   2000
+// );
+
 
 // declarando función B → callback
 
